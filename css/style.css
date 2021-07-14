@@ -87,7 +87,7 @@ body {
 
 /* main section start  */
 
-/* main section for players  */
+/* start players section under main section  */
 
 .top-main-container {
   justify-content: center;
@@ -135,8 +135,9 @@ body {
   color: #6c6c6c;
   margin-top: 0px;
 }
+/* end of players section  */
 
-/* simple blog section  */
+/* start blog and photo section under main section  */
 .container-main-blog {
   margin-top: 256px;
   align-items: center;
@@ -160,7 +161,9 @@ body {
   width: 469px;
   height: 120px;
 }
+/* end of blog and photo section  */
 
+/* our partners section under main section  */
 .our-partners {
   margin: 100px auto;
   display: block;
@@ -169,7 +172,9 @@ body {
   color: orange;
   text-shadow: 2px 2px red;
 }
+/* end of partner section  */
 
+/* start iframe is section under main section   */
 .iframe h1 {
   font-size: 64px;
   line-height: 80px;
@@ -185,7 +190,7 @@ iframe {
   display: block;
   margin: 0 auto;
 }
-
+/* end of iframe section  */
 /* footer section  */
 footer {
   margin-top: 100px;
@@ -199,6 +204,10 @@ footer {
   height: 35px;
   width: 35px;
 }
+/* end of footer section  */
+/* media query for various devices */
+/* 1440px is the perfect size for this website  */
+/* this section active when display maximum size is 580px */
 @media only screen and (max-width: 580px) {
   .container {
     width: 100%;
@@ -228,13 +237,13 @@ footer {
     margin-left: 100px;
     margin-right: 100px;
   }
-
   .players {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media only screen and (min-width: 581px) and (max-width: 1024px) {
+/* this section active when display size is (551px to 1100px)  */
+@media only screen and (min-width: 581px) and (max-width: 1100px) {
   .container {
     width: 100px;
   }
@@ -271,3 +280,5 @@ footer {
     margin-left: 100px;
   }
 }
+/* 1440px is the perfect size for this website  */
+/* after 1100px this website show as default  */
