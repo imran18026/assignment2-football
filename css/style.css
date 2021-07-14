@@ -1,7 +1,6 @@
-/* common section  */
+/* common section for css  */
 body {
-  margin: 0;
-  padding: 0;
+  padding: 10px;
   /* google font  */
   font-family: "Poppins", sans-serif;
   background-color: #f3f3f3;
@@ -19,7 +18,9 @@ body {
   background: orange;
   transition: 1.5s;
 }
-
+.container {
+  text-align: center;
+}
 .flex-container {
   display: flex;
 }
@@ -59,7 +60,6 @@ body {
   background-color: #2d25a0;
   width: 1440px;
   height: 677px;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
   margin-bottom: 75px;
   justify-content: center;
@@ -198,4 +198,69 @@ footer {
 .social-media a {
   height: 35px;
   width: 35px;
+}
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+  }
+  .container-header,
+  .container-main-blog {
+    flex-direction: column;
+  }
+  .heading-of-header h1,
+  .iframe h1,
+  .heading-of-blog h1 {
+    margin-left: 100px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .button {
+    margin-left: 100px;
+  }
+  .container-main {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .container-players {
+    width: auto;
+    height: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .heading-of-header h1,
+  .iframe h1,
+  .heading-of-blog h1 {
+    margin-left: 100px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .button {
+    margin-left: 200px;
+  }
+  .container-main {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .container-players {
+    width: auto;
+    height: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .heading-of-blog p {
+    margin-left: 30px;
+  }
+
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
